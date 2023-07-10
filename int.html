@@ -11,5 +11,14 @@
     <body>
         <h1 id="I1">Inline</h1>
         <p>CSS inline</p>
+        <img src="assets/amap.jpg" alt="mapable" usemap="#M1" style="width: 100%;height: 100%;">
+        <map name="M1">
+            <area shape="rect" coords="100,200,300,500" href="ext.html" alt="to ext" onclick="javafun()">
+        </map>
+        <script>
+            function javafun(){
+                alert("Clicked!");
+            }
+        </script>
     </body>
 </html>
