@@ -2,3 +2,4 @@ body {background-color: blue;}
 h1 {text-align: justify;}
 p {font-weight: 300;}
 table, th, td {border: 1px solid red;}
+tr:hover {background-color: chartreuse;}
