@@ -2,16 +2,23 @@
 <html>
     <head>
         <title>Title</title>
+        <style>
+            ul {overflow: hidden;margin: 0px;list-style-type: none;background-color: burlywood;}
+            li {float: left;}
+            li a {padding: 16px;text-decoration: none;display: block;text-align:center ;color: bisque;}
+            li a:hover {background-color: cadetblue;}
+        </style>
     </head>
     <body>
         <h1>Heading</h1>
         <p>Paragraph</p>
         <ul>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
+            <li><a href="ext.html">item</a></li>
+            <li><a href="ext.html">item</a></li>
+            <li><a href="ext.html">item</a></li>
         </ul>
-        <ol>
+        <p>Ordered</p>
+        <ul><ol>
             <li>First</li>
             <li>Second</li>
             <li>Third</li>
@@ -21,6 +28,6 @@
             <dd>-item first</dd>
             <dt>Second</dt>
             <dd>-item second</dd>
-        </dl>
+        </dl></ul>
     </body>
 </html>
