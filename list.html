@@ -10,8 +10,12 @@
             .nclass {background-color: rgb(92, 90, 116);}
             .note {font-size: 150%;color: cadetblue;}
         </style>
+        
     </head>
     <body>
+        <botton onclick="myFunc()">
+            Hide note class
+        </botton>
         <h1>Heading</h1>
         <p>Paragraph</p>
         <ul class="nclass">
@@ -35,5 +39,13 @@
         <div style="color: blue;">
             <p>This is a <span class="note nclass">Span</span> markup in section.</p>
         </div>
+        <script>
+            function myFunc(){
+                var x = document.getElementsByClassName("note");
+                for (var i=0;i<x.length;i++){
+                    x[i].style.display="None";
+                }
+            }
+        </script>
     </body>
 </html>
