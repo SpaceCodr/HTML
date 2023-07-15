@@ -14,7 +14,7 @@
         
     </head>
     <body>
-        <botton id="idname" onclick="myFunc()">
+        <botton id="idname" onclick="myFunc(),sFunc()">
             Hide note class
         </botton>
         <h1>Heading</h1>
@@ -38,14 +38,17 @@
             <dd>-item second</dd>
         </dl></ul>
         <div style="color: blue;">
-            <p>This is a <span class="note nclass">Span</span> markup in section.</p>
+            <p>This is a <span id="sid" class="note nclass">Span</span> markup in section.</p>
         </div>
         <script>
             function myFunc(){
                 var x = document.getElementsByClassName("note");
                 for (var i=0;i<x.length;i++){
-                    x[i].style.display="None";
+                    x[i].style.display="Block";
                 }
+            }
+            function sFunc(){
+                document.getElementById("sid").innerHTML="Upspan";
             }
         </script>
     </body>
