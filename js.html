@@ -5,6 +5,17 @@
     </head>
     <body>
         <h1 id="h1">This is heading</h1>
-        <botton id="b1" onclick="document.getElementById('h1').innerHTML=Date()">Modfy</botton>    
+        <button id="b1" style="border: 2px ridge; border-radius: 5px;background-color:cadetblue;" onclick="document.getElementById('h1').innerHTML=Date()">Modfy</button>    
+        <button onclick="fun1()"  >Stylise</button>
+        <img id="i1" src="assets/amap.jpg" alt="amap" style="display: block; height: 500px;width: 500px;">
+        <button onclick="fun2()">Modify</button>
+        <script>
+            function fun1(){
+                document.getElementById("h1").style.backgroundColor= "blue";
+            }
+            function fun2(){
+                document.getElementById("i1").src= "assets/car.jpg";
+            }
+        </script>
     </body>
 </html>
