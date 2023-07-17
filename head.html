@@ -12,8 +12,14 @@
         <meta name="author" content="Umer Bin">
         <meta name="description" content="Head tutorials">
         <meta name="keywords" content="HTML">
+        <script>
+            function fun1(){
+                document.getElementById("h_id1").innerHTML="Hello?"
+            }
+        </script>
     </head>
     <body>
-        
+        <h1 id="h_id1">Hi!</h1>
+        <button onclick="fun1()">Mod</button>
     </body>
 </html>
