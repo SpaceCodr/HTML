@@ -4,6 +4,15 @@
         <title>Title.head</title>
         <style>
             body {background-color: bisque;}
+            .left, .right {
+                float: left;
+                width:20%;
+            }
+            @media screen and (max-width:600px) {
+                .left, .right {
+                    width: 100%;
+                }
+            }
         </style>
         <link rel="stylesheet" href="styles/style2.css">
         <meta charset="UTF-8">
@@ -23,8 +32,8 @@
         <h1 id="h_id1" style="font-size: 5vw;">Hi!</h1>
         <button onclick="fun1()">Mod</button>
         <a href="ext.html">Ext</a><br>
-        <img src="assets/car.jpg" alt="Car" style="max-width: 50%;height: 50%;">
-        <picture>
+        <img class="left" src="assets/car.jpg" alt="Car" style="max-width: 50%;height: 50%;">
+        <picture class="right">
             <source srcset="assets/car.jpg" media="(max-width:600px)" style="max-width: 50%;height: 50%;">
             <source media="(1200px)" srcset="assets/amap.jpg" style="max-width: 50%;height: 50%;">
             <img src="assets/amap.jpg" alt="Amap" style="max-width: 30%;height: 30%;">
