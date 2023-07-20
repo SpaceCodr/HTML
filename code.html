@@ -2,6 +2,24 @@
 <html>
     <head>
         <title>Code</title>
+        <style>
+            .all {
+                margin: 0;
+                padding: 5px;
+                background-color: lightcoral;
+            }
+            .all > h1,.sb {
+                margin: 10px;
+                padding: 5px;
+            }
+            .sb {
+                background-color: white;
+            }
+            .sb > h2 {
+                margin: 4px;
+                font-size: 15px;
+            }
+        </style>
     </head>
     <body>
         <p>To save document press <kbd>Ctrl + S</kbd>.</p>
@@ -28,17 +46,17 @@
             <h1>Section 2</h1>
             <p>Content of section 2.</p>
         </section>
-        <article>
+        <article class="all">
             <h1>Head Article</h1>
-            <article>
+            <article class="sb">
                 <h2>Subhead 1</h2>
                 <p>Content of subhead 1.</p>
             </article>
-            <article>
+            <article class="sb">
                 <h2>Subhead 2</h2>
                 <p>Content of subhead 2.</p>
             </article>
-            <article>
+            <article class="sb">
                 <h2>Subhead 2</h2>
                 <p>Content of subhead 2.</p>
             </article>
